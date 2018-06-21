@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Agenda de contactos</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light btn modal-trigger #f48fb1 pink lighten-3t" href="#modal1"><i class="material-icons left">add</i></a></li>
+                    <li><a class="waves-effect waves-light btn #f48fb1 pink lighten-3t"><i class="material-icons left">search</i></a></li>
+                    <li>jQuery</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+      <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Agregar contacto</h4>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="contact-name" type="text" class="validate">
+                        <label for="contact-name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="contact-phone" type="tel" class="validate">
+                        <label for="contact-phone">Telephone</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a id="add-contact" href="#!" class="modal-close waves-effect waves-green btn left #f48fb1 pink lighten-3">Listo</a>
+    </div>
+    </div> 
+    <!-- seccion main -->
+    <main>
+        <h5 class="center">Contactos: 0</h5>
+        <!-- plantilla tarjeta contacto -->
+        <!-- <div class="row">
+            <div class="col offset-s3 s6">
+                <div class="card #880e4f pink darken-4">
+                    <div class="card-content">
+                        <h3 class="white-text">Nombre</h3>
+                        <span class="white-text">33 33 33 19</span>
+                        <a class="waves-effect waves-light btn right #f48fb1 pink lighten-3t"><i class="material-icons">delete</i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
